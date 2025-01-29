@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Booking System</title>
+    <link rel="stylesheet" href="book.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <h1>Yaha Book kar sakte ho</h1>
+        
+        <div class="car-list">
+          <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1532988633349-d3dfb28ee834?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sedan" class="car-image">
+            <h3>Luxury Sedan (Aukat h)</h3>
+            <p>$100 per day</p>
+            <button onclick="bookCar('Luxury Sedan', 100)">Book Now</button>
+          </div>
+          
+          <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1535448580089-c7f9490c78b1?q=80&w=2821&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SUV" class="car-image">
+            <h3>Premium SUV (door se dekhna bas)</h3>
+            <p>$150 per day</p>
+            <button onclick="bookCar('Premium SUV', 150)">Book Now</button>
+          </div>
+          
+          <div class="car-card">
+            <img src="https://plus.unsplash.com/premium_photo-1661891539075-24b4e473f67f?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sports Car" class="car-image">
+            <h3>Sports Car</h3>
+            <p>$200 per day (sapno me dekhna h yeh)</p>
+            <button onclick="bookCar('Sports Car', 200)">Book Now</button>
+          </div>
+        </div>
+
+        <div id="bookingForm" class="booking-form hidden">
+          <h2>Book Your Car</h2>
+          <form id="carForm" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="selectedCar">Selected Car:</label>
+              <input type="text" id="selectedCar" readonly>
+            </div>
+            <div class="form-group">
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="pickupDate">Pickup Date:</label>
+              <input type="date" id="pickupDate" required>
+            </div>
+            <div class="form-group">
+              <label for="days">Number of Days:</label>
+              <input type="number" id="days" min="1" required>
+            </div>
+            <div class="form-group">
+              <label for="totalPrice">Total Price:</label>
+              <input type="text" id="totalPrice" readonly>
+            </div>
+            <button type="submit">Confirm Booking</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/book.js"></script>
+  </body>
+</html>

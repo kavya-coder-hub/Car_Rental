@@ -1,0 +1,104 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    background-color: #f5f5f5;
+    color: #213547;
+  }
+  
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #6426e8;
+    margin-bottom: 2rem;
+  }
+  
+  .car-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .car-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .car-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    background-color: #646cff;
+    color: white;
+    border: none;
+    padding: 0.6em 1.2em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #535bf2;
+  }
+  
+  .booking-form {
+    max-width: 500px;
+    margin: 2rem auto;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+    
+    .car-list {
+      grid-template-columns: 1fr;
+    }
+  }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Signup</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <div class="header">
+        <h1 id="title">Welcome back</h1>
+        <p id="description">Enter your credentials to access your account</p>
+      </div>
+
+      <form id="authForm" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Enter your email"
+            oninput="handleEmailInput()"
+            required
+          >
+          <span class="error" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="password-input">
+            <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).{8,}"
+              title="Must contain at least one number, one uppercase letter, one lowercase letter, one special character, and at least 8 or more characters" 
+              disabled
+              required
+              placeholder="Enter your password"
+              oninput="handlePasswordInput()"
+            >
+            <button 
+              type="button" 
+              class="toggle-password" 
+              onclick="togglePassword()"
+            >
+              <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </button>
+          </div>
+          <span class="error" id="passwordError"></span>
+        </div>
+
+        <div class="form-group" id="confirmPasswordGroup" style="display: none;">
+          <label for="confirmPassword">Confirm Password</label>
+          <input 
+            type="password" 
+            id="confirmPassword" 
+            name="confirmPassword" 
+            placeholder="Confirm your password"
+            oninput="handlePasswordInput()"
+          >
+          <span class="error" id="confirmPasswordError"></span>
+        </div>
+
+        <button type="submit" id="submitButton" class="submit-btn" disabled>
+          <svg id="submitIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
+            <polyline points="10 17 15 12 10 7"/>
+            <line x1="15" y1="12" x2="3" y2="12"/>
+          </svg>
+          <span id="submitText">
+            <a href="index.html" id="sgn">SignIn</a>
+          </span>
+        </button>
+      </form>
+
+      <div class="toggle-mode">
+        <button onclick="toggleMode()" id="toggleBtn">
+          Don't have an account? Sign up
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+

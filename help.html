@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Rental Help & Support</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="help.css">
+</head>
+<body>
+  <div class="min-h-screen bg-gray-50">
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <div class="container">
+        <h1>How can we help you?</h1>
+        <div class="search-container">
+          <i data-lucide="search" class="search-icon"></i>
+          <input 
+            type="text" 
+            placeholder="Search for help articles..."
+            id="searchInput"
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="container quick-links-section">
+      <div class="quick-links-grid">
+        <div class="quick-link-card">
+          <div class="card-header">
+            <i data-lucide="car"></i>
+            <h3>Booking Help</h3>
+          </div>
+          <p>Get assistance with your car bookings</p>
+        </div>
+
+        <div class="quick-link-card">
+          <div class="card-header">
+            <i data-lucide="credit-card"></i>
+            <h3>Payment Issues</h3>
+          </div>
+          <p>Resolve payment-related concerns</p>
+        </div>
+
+        <div class="quick-link-card">
+          <div class="card-header">
+            <i data-lucide="calendar"></i>
+            <h3>Reservation Changes</h3>
+          </div>
+          <p>Modify or cancel your reservations</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="container faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do I make a car booking?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Making a car booking is simple! Just select your pickup location, dates, and preferred vehicle type. Follow the checkout process to confirm your reservation with payment details.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What documents do I need for car rental?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            You'll need a valid driver's license, credit card in the main driver's name, and a form of identification (passport or ID card). Additional documents may be required for international rentals.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I modify or cancel my booking?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Yes, you can modify or cancel your booking through your account dashboard. Free cancellation is available up to 48 hours before pickup. Changes may affect the final price.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What's included in the rental price?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Our standard rental price includes basic insurance, unlimited mileage, 24/7 roadside assistance, and all mandatory fees. Additional services like GPS or child seats are available for an extra charge.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+      <div class="container">
+        <h2>Still Need Help?</h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <i data-lucide="phone"></i>
+            <h3>Call Us</h3>
+            <p class="contact-info">1-800-CAR-RENT</p>
+            <p class="contact-subinfo">24/7 Support Available</p>
+          </div>
+
+          <div class="contact-card">
+            <i data-lucide="mail"></i>
+            <h3>Email Us</h3>
+            <p class="contact-info">support@carrent.com</p>
+            <p class="contact-subinfo">Response within 24 hours</p>
+          </div>
+
+          <div class="contact-card">
+            <i data-lucide="message-circle"></i>
+            <h3>Live Chat</h3>
+            <p class="contact-info">Chat with an agent</p>
+            <p class="contact-subinfo">Available 9AM - 6PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="help.js"></script>
+</body>
+</html>

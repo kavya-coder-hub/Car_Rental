@@ -1,0 +1,84 @@
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.nav{
+    display: flex;
+    margin-left: 10px;
+    height: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.hero {
+        /* height: 70vh; */
+        background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        padding: 0 1rem;
+}
+#abt{
+    color: black;
+    text-decoration: none;
+}
+#car{
+    color: black;
+    text-decoration: none;
+}
+#feat{
+    color: black;
+    text-decoration: none;
+}
+#book{
+    color: black;
+    text-decoration: none;
+}
+#help{
+    color: black;
+    text-decoration: none;
+}
+.item2{
+    margin-left: 530px;
+    display: flex;
+    margin-top: 50px;
+    font-size: larger; 
+}
+
+.items2{
+    margin-left: 50px;
+}
+.items3{
+    margin-left: 50px;
+}
+.items4{
+    margin-left: 50px;
+}
+.items5{
+    margin-left: 50px;
+    margin-top: 45px;
+}
+.items6{
+    margin-left: 50px;
+    margin-top: 45px;
+}
+.sign{
+    height: 35px;
+    width: 100px;
+   background-color: rgb(78,128,238);
+    border-radius: 8px;
+    transition: all;
+    color: white;
+}
+.sign:hover{
+    background-color: rgb(10, 56, 184);
+    color: white;
+}
+.main{
+    height: 800px;
+    width: 1470px;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+}
